@@ -1,23 +1,11 @@
-﻿Console.Write("Напиши любое число: ");
-
-int array = int.Parse(Console.ReadLine());
-
-int [] UserArray = new int[]{array};
+﻿Console.Write("Введи любое число: ");
+int User_Number = Convert.ToInt32(Console.ReadLine());
+string Number = Convert.ToString(User_Number);
+if (Number.Length > 2)
 {
-    int lenght = UserArray.Length;
-    int index = 0;
-    while (index < lenght)
-    {
-        Console.WriteLine(UserArray[2]);
-        index++;
-    }
-    
+  Console.WriteLine("третья цифра этого числа  " + Number[2]);
 }
-
-
-//if (user_number > 100 && user_number < 1000) Console.Write("Вторя цифра этого числа = " + user_number /1 % 1);
-
-if (array < 100) Console.WriteLine("Третьей цифры нет!");
-
-
-
+else 
+{
+  Console.WriteLine("Третьей цифры нет");
+}
