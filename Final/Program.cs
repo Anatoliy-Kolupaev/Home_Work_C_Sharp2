@@ -50,7 +50,7 @@ while(n < v)
     {
         Console.Write("Напиши любое трехзначное число: ");
         int user_number = int.Parse(Console.ReadLine());
-        if (user_number > 100 && user_number < 1000) Console.WriteLine("Вторя цифра этого числа = " + user_number /10 % 10); 
+        if (user_number > 100 || user_number < 1000) Console.WriteLine("Вторя цифра этого числа = " + user_number /10 % 10); 
         else System.Console.WriteLine("Ты ввел не правельное число! Необходимо ввести ТРЕХЗНАЧНОЕ число!");
         if (user_number == 0) return ;
   
@@ -61,15 +61,9 @@ while(n < v)
         Console.Write("Введи любое число: ");
         int User_Number = Convert.ToInt32(Console.ReadLine());
         string Number = Convert.ToString(User_Number);
-        if (Number.Length > 2)
-        {
-        Console.WriteLine("третья цифра этого числа  " + Number[2]);
-        }
-        else 
-        {
-        Console.WriteLine("Третьей цифры нет");
-        }
-
+        if (Number.Length > 2) Console.WriteLine("третья цифра этого числа  " + Number[2]);
+        else Console.WriteLine("Третьей цифры нет");
+       
     }
     void task3()
     {
